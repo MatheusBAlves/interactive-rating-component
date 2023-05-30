@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!-- Rating state start -->
+
+  <main class="container">
+    <div class="container__icon">
+      <img src="./images/icon-star.svg" alt="Yellow Star">
+    </div>
+    <h1 class="container__title">How did we do?</h1>
+    <p class="container__description">
+      Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!
+    </p>
+    <form>
+      <div class="container__rate">
+        <div>
+          <input type="radio" name="rate" id="1" value="1">
+          <label for="1">
+            1
+          </label>
+        </div>
+        <div>
+          <input type="radio" name="rate" id="2" value="2">
+          <label for="2">
+            2
+          </label>
+        </div>
+        <div>
+          <input type="radio" name="rate" id="3" value="3">
+          <label for="3">
+            3
+          </label>
+        </div>
+        <div>
+          <input type="radio" name="rate" id="4" value="4">
+          <label for="4">
+            4
+          </label>
+        </div>
+        <div>
+          <input type="radio" name="rate" id="5" value="5">
+          <label for="5">
+            5
+          </label>
+        </div>
+      </div>
+      <button class="button" type="submit">Submit</button>
+    </form>
+  </main>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <section class="container second hidden">
+    <img src="./images/illustration-thank-you.svg" alt="" class="container__image">
+    <p class="container__raiting">You selected <span></span> out of 5</p>
+    <h2 class="container__title">Thank you!</h2>
+    <p class="container__description">
+      We appreciate you taking the time to give a rating. If you ever need more support,
+      don&#8217;t hesitate to get in touch!
+    </p>
+  </section>
+
+  <!-- Thank you state end -->
+
+
+  <footer class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/MatheusBAlves" target="_blank">Matheus B. Alves</a>.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
